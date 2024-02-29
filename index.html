@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mytube</title>
+    <!-- daysiui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style  -->
+  </head>
+  <body>
+    <header>
+      <nav class="max-w-6xl mx-auto py-6 border-b-[1px] border-gray-500">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img src="images/Logo.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <button class="btn">Sort by view</button>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-red-700">Blog</a>
+          </div>
+        </div>
+      </nav>
+      <!-- dynamic button start -->
+      <div class="mt-6 text-center" id="btn-div"></div>
+    </header>
+    <main class="mt-8">
+      <div
+        id="card-container"
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
+      ></div>
+    </main>
+    <!-- javascript cdn -->
+    <script src="js/utility.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
